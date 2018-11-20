@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Government</h2>
+
+<p>How blockchain technology influence different government:</p>
+<button class="collapsible">Why do government use blockchain technology?</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p>Leading Governments:</p>
+<button class="collapsible">Australian Government</button>
+<div class="content">
+  <p> The Australian Government has implemented blockchain technology in digital marketplace, so small Australian firms can secure government as their first customer. The Australian Government is looking for methods to build on blockchain's infrastructure and allow a fair place for transactions to occur. They have made several organizations such as Standards Australia (A committee that governs blockchain standards and its uses, rules and other relevant information)
+  </p>
+</div>
+<button class="collapsible">Hong Kong Government</button>
+<div class="content">
+  <p> In a recent RISE conference, Consensyn Mesh initiated a discussion on individual's opinion on the future of blockchain and its effect with the Hong Kong Government. In the discussion, it is suggested that the Hong Kong Government are looking into methods to implement blockchain to regulate the tremendous number of assets within Hong Kong, which will reduce the error and delayed information from a paper-based system. Another factor that was taken into consideration is tax collection. Smart contracts allows firms and individuals to pay tax without any cost from any organization. OpenLaw has made a proposal on how firms can utilize smart contracts to pay for tax.
+  </p>
+</div>
+<button class="collapsible">US Government</button>
+<div class="content">
+  <p>As of November 2018, Homeland Security has accepted proposals that cost up to $800,000 government funding in technology of Blockchain to improve and secure information in regards to issued certificates, attestations and licenses. It also aims to target and solve issues regarding to issuance and vertification, government credentials and storage and management. The DHS believes that blockchain can lead to higher efficiency for government processes and bring positive impacts to U.S. Citizens lives.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
