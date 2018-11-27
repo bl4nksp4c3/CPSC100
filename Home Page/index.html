@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,19 +68,19 @@ body {
 </div>
 
 <script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
 function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
+    var txt;
+    var person = prompt("Please enter your name:", "Type name here");
+    if (person == null || person == "") {
+        alert("Please enter your name!");
+    } else {
+        alert("Hello " + person + "! This website will show you how Blockchain works!");document.location.href = "https://www.edureka.co/blog/how-blockchain-works/";
+    }
+    document.getElementById("demo").innerHTML = txt;
 }
 </script>
+
+
 
 </body>
 </html>
