@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!D<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Page Title</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 * {
     box-sizing: border-box;
@@ -19,7 +19,7 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background: #1abc9c;
+    background: ;
     color: white;
 }
 
@@ -114,94 +114,73 @@ body {
 
 <div class="header">
   <h1>BlockChain Technology</h1>
-  <p>Current and Future Applications</p>
+  <p>Beginner's guide to Blockchain Technology</p>
 </div>
 
 <div class="navbar">
   <a href="#">Cryptocurrencies</a>
   <a href="#">Government</a>
   <a href="#">Education</a>
-  <a href="#" class="right">Link</a>
 </div>
-
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-  z-index: 2;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
-}
-</style>
-</head>
-<body>
-
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
-    </div>
-
-  </div>
-</div>
-
 
   <div class="main">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-  </div>
+
+  <h2>HOW DOES BLOCKCHAIN WORK?</h2>
+
+      <div class ="image" style="height:200px;"> <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/digital-sign-how-blockchain-works-edureka.png" alt="Digital sig" style="width:800px;height:150px;"></div>
+      <p> To understand how a simple transaction works over the blockchain network, we will explain it in detail in this example. When Kevin sends James 5 BTC, the transcation is broadcasted to a peer to peer network as a digital message. </p>
+      <p>The digital message has a unique signature. This is similar to your signature which provides the proof of ownership of the document, similarly, digital signature provides the proof that the transaction is genuine.
+
+ </p>
+<br>
+ <h2>INDEPENDENT VERIFICATION</h2>
+
+      <div class ="image" style="height:300px;"> <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/Independent-verification.png" alt="network" style="width:500px;height:250px;"></div>
+      <p> Before sending transactions to its neighbors, each bitcoin node that gets the transaction will indpendently verify the transaction. </p>
+      <p>This guarantees only valid transactions are propagated across the system while invalid transactions are disposed of at the first node which receives them. Every node confirms each transaction against a long agenda of criteria.
+
+ </p>
+<br>
+<h2>AGGREGATION OF VERIFIED TRANSACTION</h2>
+
+      <div class ="image" style="height:300px;"> <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/transaction-aggregation-how-blockchain-works-edureka.png" alt="network" style="width:350px;height:250px;"></div>
+      <p>   Independent aggregation of those transactions into new blocks by mining nodes combined with exhibited calculation through a proof-of-work algorithm. </p>
+      <p>By autonomously confirming every transaction as it is received and before propagating it, each node fabricates a pool of valid (however unconfirmed) transactions known as the transaction pool, memory pool or mempoo.
+Transaction reaches Mining nodes it collects, validates, and relays new transactions just like other nodes.
+Unlike other nodes, miner node will then aggregate these transactions into a candidate block.
+ </p>
+ <P> Candidate block will be constructed by the miner's node, and the miner will utilize their hardware mining rig to “mine” the block, to find a solution to the proof-of-work algorithm that makes the block valid.</P>
+<br>
+<h2>DATA MINING</h2>
+
+      <div class ="image" style="height:300px;"> <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/proof-of-work-how-blockchain-works-edureka.png" alt="network" style="width:500px;height:250px;"></div>
+      <p> The mining node running on the miner's desktop transmits the block header to their mining hardware, which starts testing trillions of nonces per second.
+Once one of the hardware mining machines finds a solution and sends it back to the mining node the mining node transmits the block to all its peers. </p>
+
+ <P>
+They receive, validate, and then propagate the new block. As the block ripples out across the network
+Now that that block is propagated in the network, each full nodes independently verifies the block.</P>
+<br>
+<h2>ASSEMBLING AND SELECTING CHAINS OF BLOCKS</h2>
+
+      <div class ="image" style="height:250px;"> <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/assembling-block-how-blockchain-works-edureka.png" alt="network" style="width:250px;height:200px;"></div>
+      <p> Once a node has validated a new block, it will then attempt to assemble a chain by connecting the block to the existing blockchain. </p>
+
+ <P>
+
+
+Once the block is verified by the network (illustrated in orange), it assembles the chain by connecting the block to the existing blockchain and becomes the part of the blockchain. And the miner is rewarded for successfully solving the block puzzle. </P>
+<br>
+
+
+      <h2>HISTORY OF BLOCKCHAIN</h2>
+
+      <p> Blockchain is a decentralized distributed database of immutable records, where transactions are protected by strong cryptographic algorithms and the network status is maintained by the Consensus algorithm. In simple words, Blockchain is a chain of blocks that contain information.</p>
+      <p>The technology was originally described in 1991 and was intended to timestamp digital documents to avoid backdate or tempering of any records.
+
+However great the technology was, its true potential was not realized until Satoshi Nakamoto used it to create a digital cryptocurrency “the Bitcoins“.</p>
+    <br>
+
 </div>
 
 
@@ -379,7 +358,7 @@ body {
   <div class="container right">
     <div class="content">
       <h2>2014-2015</h2>
-      <p>Evolution of smart contracts</p>
+      <p>Evolution of smart contracts.</p>
     </div>
   </div>
     <div class="container left">
@@ -398,4 +377,5 @@ body {
 
 
 </body>
+
 </html>
